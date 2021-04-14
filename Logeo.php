@@ -15,7 +15,7 @@
     <br>
     <div class="form-control" style="width:500px; position: relative; left:35%;" >
         <fieldset>
-            <legend>Formulario</legend>
+            <legend>Login</legend>
             <form action="logeo.php" method="post">
                 <input type="text" name="txtUsuario" placeholder="Nombre de usuario" class="form-control"><br>
                 <input type="password" name="txtPass" placeholder="Contraseña" class="form-control"><br>
@@ -34,11 +34,9 @@
             $usuario = $_POST["txtUsuario"];
             $contra = $_POST["txtPass"];
 
-            if($usuario == 'admon' && $contra == 'Itca123'){
-                echo "Hola soy administrador";
+            if($usuario == 'admon' && $contra == 'Itca123'){                
                 $nivel = 'Administrador';
-            }else if($usuario == 'secre' && $contra == 'Itca123'){
-                echo "Hola soy Secretaria";
+            }else if($usuario == 'secre' && $contra == 'Itca123'){                
                 $nivel = 'Secretaria';
             }else{
                 $nivel = "";
