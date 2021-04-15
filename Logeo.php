@@ -48,7 +48,7 @@
                     </script>";
             }
             
-            if($nivel != ""){
+            if($nivel != ""){ 
                 $_SESSION["usuario"]["nivel"]=$nivel;
                 $_SESSION["usuario"]["usuario"]=$usuario;
             }else{

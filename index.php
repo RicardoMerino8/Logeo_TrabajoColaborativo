@@ -4,7 +4,7 @@
     //caso contrario no deja ver index
     if(!isset($_SESSION["usuario"])){
         header("Location:logeo.php");
-    }
+    } 
 ?>
 
 <!DOCTYPE html>

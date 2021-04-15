@@ -5,7 +5,7 @@
     if(!isset($_SESSION["usuario"])){
         header("Location:logeo.php");
     }
-?>
+?> 
 
 <!DOCTYPE html>
 <html lang="es">
