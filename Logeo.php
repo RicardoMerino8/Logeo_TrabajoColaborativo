@@ -36,8 +36,10 @@
 
             if($usuario == 'admon' && $contra == 'Itca123'){                
                 $nivel = 'Administrador';
+                header("Location:admin.php");
             }else if($usuario == 'secre' && $contra == 'Itca123'){                
                 $nivel = 'Secretaria';
+                header("Location:index.php");
             }else{
                 $nivel = "";
                 echo "<script>
@@ -49,7 +51,6 @@
             if($nivel != ""){
                 $_SESSION["usuario"]["nivel"]=$nivel;
                 $_SESSION["usuario"]["usuario"]=$usuario;
-                header("Location:index.php");
             }else{
                 echo "<script>
                         alert('Usuario o Contraseña Incorrectos');
